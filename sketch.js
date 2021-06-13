@@ -14,11 +14,12 @@ var Engine = Matter.Engine,
  Composites = Matter.Composites,
  Bounds = Matter.Bounds;
 
-var camFocus,stats;
+var camFocus,stats,walkSound;
 let skeld_img;
 
 function preload() {
   skeld_img = loadImage("Assets/ship_highres.png");
+  walkSound = loadSound("GameMusic/SoundEffects/walkSound.mp3");
 }
 
 
@@ -30,7 +31,7 @@ function setup() {
     camFocus = new CameraScript();
     camFocus.setDefaultProperties();
     //camFocus.zoom(3)
-    
+    walkSound.play(100,2,1,2,Infinity);
 
     
 
@@ -41,6 +42,7 @@ function setup() {
 
 function draw() {
 background(0);
+
 
     imageMode(CENTER);
     
