@@ -1,3 +1,4 @@
+//! Commited to GitHub via VsCode @13/06/21 11 AM
 var Engine = Matter.Engine,
  World= Matter.World,
  Bodies = Matter.Bodies,
@@ -17,7 +18,7 @@ var camFocus,stats;
 let skeld_img;
 
 function preload() {
-  skeld_img = loadImage("Assets_github/ship_highres.png");
+  skeld_img = loadImage("Assets/ship_highres.png");
 }
 
 
