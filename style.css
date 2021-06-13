@@ -1,0 +1,13 @@
+::-webkit-scrollbar {
+    display:none;
+}
+
+.zoom
+{
+    zoom: 75%;
+}
+
+html,body {
+    margin:0;
+    padding:0;
+}
