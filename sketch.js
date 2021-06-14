@@ -1,3 +1,4 @@
+
 //! Commited to GitHub via VsCode @13/06/21 11 AM
 var Engine = Matter.Engine,
  World= Matter.World,
@@ -16,10 +17,17 @@ var Engine = Matter.Engine,
 
 var camFocus,stats,walkSound;
 let skeld_img;
+var amaticBold,amaticRegular,jeffrey,mixigiants;
 
 function preload() {
   skeld_img = loadImage("Assets/ship_highres.png");
   walkSound = loadSound("GameMusic/SoundEffects/walkSound.mp3");
+  amaticBold = loadFont(path, [callback]);
+  amaticRegular = loadFont(path, [callback]);
+  jeffrey = loadFont(path, [callback]);
+  mixigiants = loadFont(path, [callback]);
+
+
 }
 
 

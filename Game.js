@@ -9,6 +9,10 @@ class Game {
          this.rect = rect(0,0,200,23);
          this.nameInput = createInput("");
          this.name = this.nameInput.value;
+         console.log(this.name);
+         this.playerList = [this.name];
+         this.playerListOBJ = Object.keys(this.playerList);
+         alert("playerlistobj = "+this.playerListOBJ);
          this.characterLimit = 10;
          this.joinPublicServer = loadImage("");
          this.joinPrivateServer = loadImage("");
@@ -21,7 +25,7 @@ class Game {
          this.joinPrivateServerArrow = loadImage("");
          this.authorInfoButton = loadImage("");
          this.locationFindServerButton = loadImage("");
-         this.appVersionText = createElement('v2021.1.0b')//indicates 2021, version 1.0, b for BETA
+         this.gameVersionext = createElement('v2021.1.0b')//indicates 2021, version 1.0, b for BETA
         
          
     }
