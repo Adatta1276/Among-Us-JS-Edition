@@ -15,17 +15,20 @@ var Engine = Matter.Engine,
  Composites = Matter.Composites,
  Bounds = Matter.Bounds;
 
-var camFocus,stats,walkSound;
+var canvas,engine,world,camFocus,stats,walkSound;
 let skeld_img;
 var amaticBold,amaticRegular,jeffrey,mixigiants;
 
 function preload() {
+  //soundFormats('mp3', 'wav');
+  
+  
   skeld_img = loadImage("Assets/ship_highres.png");
   walkSound = loadSound("GameMusic/SoundEffects/walkSound.mp3");
-  amaticBold = loadFont(path, [callback]);
-  amaticRegular = loadFont(path, [callback]);
-  jeffrey = loadFont(path, [callback]);
-  mixigiants = loadFont(path, [callback]);
+  amaticBold = loadFont('Fonts/FontFiles/amatic/Amatic-Bold.ttf');
+  amaticRegular = loadFont('Fonts/FontFiles/amatic/AmaticSC-Regular.ttf');
+  jeffrey = loadFont('Fonts/FontFiles/in-your-face-joffrey/In your face, joffrey!.ttf');
+  mixigiants = loadFont('Fonts/FontFiles/mixigiants/MixiGiants.ttf');
 
 
 }
@@ -35,7 +38,9 @@ function setup() {
 
     //windowWidth < displayWidth
     //windowHeight < displayWidth
-    createCanvas(windowWidth,windowHeight);
+    canvas = createCanvas(windowWidth,windowHeight);
+    engine = Engine.create();
+	world = engine.world;
     camFocus = new CameraScript();
     camFocus.setDefaultProperties();
     //camFocus.zoom(3)
@@ -51,6 +56,8 @@ function setup() {
 function draw() {
 background(0);
 
+//console.log(window.location.protocol);
+Engine.update(engine);
 
     imageMode(CENTER);
     
