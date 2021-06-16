@@ -15,7 +15,7 @@ var Engine = Matter.Engine,
  Composites = Matter.Composites,
  Bounds = Matter.Bounds;
 
-var canvas,engine,world,camFocus,stats,walkSound;
+var canvas,engine,world,camFocus,stats,WalkSound;
 let skeld_img;
 var amaticBold,amaticRegular,jeffrey,mixigiants;
 
@@ -24,13 +24,14 @@ function preload() {
   
   
   skeld_img = loadImage("Assets/ship_highres.png");
-  walkSound = loadSound("GameMusic/SoundEffects/walkSound.mp3");
+  WalkSound = loadSound('GameMusic/SoundEffects/walkSound.mp3');
   amaticBold = loadFont('Fonts/FontFiles/amatic/Amatic-Bold.ttf');
   amaticRegular = loadFont('Fonts/FontFiles/amatic/AmaticSC-Regular.ttf');
   jeffrey = loadFont('Fonts/FontFiles/in-your-face-joffrey/In your face, joffrey!.ttf');
   mixigiants = loadFont('Fonts/FontFiles/mixigiants/MixiGiants.ttf');
 
 
+  //what is interface in typescript
 }
 
 
@@ -44,7 +45,7 @@ function setup() {
     camFocus = new CameraScript();
     camFocus.setDefaultProperties();
     //camFocus.zoom(3)
-    walkSound.play(100,2,1,2,Infinity);
+    WalkSound.play(100,2,1,2,Infinity);
 
     
 
