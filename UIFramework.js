@@ -1,3 +1,2 @@
-class uiFramework {
+class uiFramework {}
     
-}

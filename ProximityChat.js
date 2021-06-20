@@ -38,6 +38,7 @@ function draw() {
         this.gHeight = gHeight;
         
         this.testCrewMate = new Crewmate();
+        this.volSlider = createSlider(0, 100, 50/*, [step]*/);
         this.testImp = new Imposter();
         this.mic = new p5.AudioIn();
         this.lowFilter = new p5.LowPass();

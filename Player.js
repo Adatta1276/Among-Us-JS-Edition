@@ -12,7 +12,8 @@ class Crewmate {
         this.emergencyMeetingTableLocation = 0;
         this.body = loadAnimation("");
         this.ghost = loadAnimation("");
-        this.animation = loadAnimation("");
+        this.randomAnimation = Math.round(random(0,1));
+        this.animation = null;
         this.walkSound = loadSound("walkSound.mp3");
         this.reportButton = loadImage("");
         this.useButton = loadImage("");
@@ -20,6 +21,17 @@ class Crewmate {
         this.costume = loadImage("");
         this.pet = loadImage("");
         this.randomColor = Math.round(random(1,10));
+    }
+
+    animationDoStuff() {
+        if(this.randomAnimation===0) {
+            this.animation = loadImage("Assets/player_1.png");
+            animation(image(this.animation, this.x, this.y, this.w, this.h, 44, 60, 86, 120)/*continue other animations/images*/)
+        }
+
+        else {
+            this.animation = loadImage("Assets/player_2.png");
+        }
     }
 
 

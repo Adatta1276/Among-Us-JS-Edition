@@ -23,12 +23,16 @@ function preload() {
   //soundFormats('mp3', 'wav');
   
   
-  skeld_img = loadImage("Assets/ship_highres.png");
+  // ! KNOWN ISSUES : 1) Map takes time to render due to high res.
+  // ! KNOWN ISSUES : 2) For a 1080p display on Google Chrome, browser zoom level needs to be 90% for map to show properly
+
+  
+  skeld_img = loadImage("Assets/shipCool.png");
   WalkSound = loadSound('GameMusic/SoundEffects/walkSound.mp3');
   amaticBold = loadFont('Fonts/FontFiles/amatic/Amatic-Bold.ttf');
   amaticRegular = loadFont('Fonts/FontFiles/amatic/AmaticSC-Regular.ttf');
   jeffrey = loadFont('Fonts/FontFiles/in-your-face-joffrey/In your face, joffrey!.ttf');
-  mixigiants = loadFont('Fonts/FontFiles/mixigiants/MixiGiants.ttf');
+  mixigiants = loadFont('Fonts/FontFiles/mixgiants/MixGiants.ttf');
 
 
   //what is interface in typescript
@@ -55,14 +59,14 @@ function setup() {
 
 
 function draw() {
-background(0);
+background(255);
 
 //console.log(window.location.protocol);
 Engine.update(engine);
 
     imageMode(CENTER);
     
-    image(skeld_img,displayWidth/2,displayHeight/2,displayWidth,displayHeight)
+    image(skeld_img,displayWidth/2,displayHeight/2+20,displayWidth,displayHeight)
 
 }
 
