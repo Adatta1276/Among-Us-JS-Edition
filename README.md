@@ -2,9 +2,7 @@
 
 ``` This is a work still in development !! ```
 
-<p align="center">
-  <img src="https://profile-counter.glitch.me/Adatta1276/Among-Us-JS-Edition/count.svg" alt=Iamtripathisatyam />
-</p>
+
 
 
 
