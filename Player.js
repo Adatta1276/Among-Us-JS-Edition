@@ -54,7 +54,7 @@ class Imposter{
         this.y = y;
         this.w = w;
         this.h = h;
-        this.roleSound = loadSound("")
+        this.roleSound = loadSound("");
         this.color = color;
         this.stroke = stroke;
         this.weight = weight;
