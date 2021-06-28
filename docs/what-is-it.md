@@ -4,7 +4,7 @@ I made this repository for one reason only......................................
 
 I was a bit bored of making small, normal projects, so I just wondered if I could do this challenge, and I started doing it. 
 
-Trust me, it is(not) easy😦😬
+**Trust me, it is(not) easy😦😬**
 
 And I'm still doing it
 
