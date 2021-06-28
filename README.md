@@ -6,11 +6,10 @@
 
 
 
-### EXPECTED LAUNCH DATE : oh wait thats supposed to be secret 😂😂 <br>
 
 
 
-## Once this code goes public, feel free to open a issue or issue a pull request!!
+## Feel free to open a issue or issue a pull request!!
 
 *Regards,*
 *Adatta1276*
