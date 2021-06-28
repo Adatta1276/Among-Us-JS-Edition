@@ -55,7 +55,28 @@ function setup() {
     WalkSound.play(100,2,1,2,Infinity);
 
    // alert(chest);
-   
+   let timerInterval
+Swal.fire({
+  title: 'Thanks for visiting! ',
+  html: 'I will close in <b></b> milliseconds.',
+  timer: 2500,
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading()
+    timerInterval = setInterval(() => {
+      const content = Swal.getHtmlContainer()
+      if (content) {
+        const b = content.querySelector('b')
+        if (b) {
+          b.textContent = Swal.getTimerLeft()
+        }
+      }
+    }, 100)
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+})
    
 
 
