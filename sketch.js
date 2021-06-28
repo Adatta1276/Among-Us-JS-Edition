@@ -19,6 +19,8 @@ var canvas,engine,world,camFocus,stats,WalkSound;
 let skeld_img;
 var amaticBold,amaticRegular,jeffrey,mixigiants;
 
+//var chest = "asdhg!@#12#$.?";
+
 function preload() {
   //soundFormats('mp3', 'wav');
   
@@ -33,7 +35,7 @@ function preload() {
   amaticRegular = loadFont('Fonts/FontFiles/amatic/AmaticSC-Regular.ttf');
   jeffrey = loadFont('Fonts/FontFiles/in-your-face-joffrey/In your face, joffrey!.ttf');
   mixigiants = loadFont('Fonts/FontFiles/mixgiants/MixGiants.ttf');
-
+  
 
   //what is interface in typescript
 }
@@ -51,7 +53,9 @@ function setup() {
     //camFocus.zoom(3)
     WalkSound.play(100,2,1,2,Infinity);
 
-    
+   // alert(chest);
+   
+   
 
 
 }
