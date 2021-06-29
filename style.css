@@ -18,3 +18,7 @@ margin: 0;
 padding:0;
 box-shadow: 50px -1px 30px 9px #87CEEB;
 } */
+
+.swal2-modal {
+    min-height: 300px;
+  }

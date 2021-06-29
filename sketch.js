@@ -52,14 +52,19 @@ function setup() {
     camFocus = new CameraScript();
     camFocus.setDefaultProperties();
     //camFocus.zoom(3)
+    //! Fix walkSound not playing
     WalkSound.play(100,2,1,2,Infinity);
 
    // alert(chest);
-   let timerInterval
+
+   //customize sweetalert properties for this one separately using CSS
+   let timerInterval;
+   
 Swal.fire({
-  title: 'Thanks for visiting! ',
-  html: 'I will close in <b></b> milliseconds.',
-  timer: 2500,
+  title: 'Thanks for visiting!',
+  html: 'This popup will close in <b></b> milliseconds.',
+  timer: 6000,
+  heightAuto:false,
   timerProgressBar: true,
   didOpen: () => {
     Swal.showLoading()
@@ -78,7 +83,7 @@ Swal.fire({
   }
 })
    
-
+console.log(window.location.port && window.location.href);
 
 }
 
