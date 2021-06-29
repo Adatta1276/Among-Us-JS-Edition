@@ -61,8 +61,8 @@ function setup() {
    let timerInterval;
    
 Swal.fire({
-  title: 'Thanks for visiting!',
-  html: 'This popup will close in <b></b> milliseconds.',
+  title: 'Welcome to server : '+window.location.origin,
+  html: 'This popup will close in <b></b> seconds',
   timer: 6000,
   heightAuto:false,
   timerProgressBar: true,
@@ -73,7 +73,7 @@ Swal.fire({
       if (content) {
         const b = content.querySelector('b')
         if (b) {
-          b.textContent = Swal.getTimerLeft()
+          b.textContent = Math.round(Swal.getTimerLeft()/1000);
         }
       }
     }, 100)
@@ -83,7 +83,6 @@ Swal.fire({
   }
 })
    
-console.log(window.location.port && window.location.href);
 
 }
 

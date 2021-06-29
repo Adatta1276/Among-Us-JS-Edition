@@ -26,7 +26,7 @@ class Crewmate {
     animationDoStuff() {
         if(this.randomAnimation===0) {
             this.animation = loadImage("Assets/player_1.png");
-            animation(image(this.animation, this.x, this.y, this.w, this.h, 44, 60, 86, 120) /*continue other animations/images*/)
+            animation(image(this.animation, this.x, this.y, this.w, this.h, 44, 60, 86, 120), image(this.animation, this.x, this.y, this.w, this.h, 140, 60, 86, 120),image(this.animation, this.x, this.y, this.w, this.h, 236, 60, 86, 120),image(this.animation, this.x, this.y, this.w, this.h, 232, 60, 86, 120))
         }
 
         else {
