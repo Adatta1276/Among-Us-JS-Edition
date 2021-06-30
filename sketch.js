@@ -61,7 +61,7 @@ function setup() {
    let timerInterval;
    
 Swal.fire({
-  title: 'Welcome to server : '+window.location.origin,
+  title: 'Welcome to server : '+window.location.hostname,
   html: 'This popup will close in <b></b> seconds',
   timer: 6000,
   heightAuto:false,
