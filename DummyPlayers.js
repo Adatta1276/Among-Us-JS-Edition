@@ -1,1 +1,3 @@
-class DummyPlayer extends Crewmate {}
+class DummyPlayer extends Crewmate {
+    
+}
