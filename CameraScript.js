@@ -9,7 +9,7 @@ class CameraScript {
     setDefaultProperties() {
         camera.position.x = displayWidth/2;
         camera.position.y = displayHeight/2;
-     
+        camera.zoom = 1;
     }
 
     zoom(val) {

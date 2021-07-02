@@ -6,7 +6,7 @@ class Crewmate {
         this.h = h;
         this.color = color;
         this.stroke = stroke;
-        this.weight = weight;
+        this.weight = weight; // = strokeWeight
         this.spawnAnimation = loadAnimation("");
         this.spawnLocation = loadImage("");
         this.emergencyMeetingTableLocation = 0;
