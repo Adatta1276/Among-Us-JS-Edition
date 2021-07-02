@@ -1,6 +1,8 @@
 
 //! Commited to GitHub via VsCode @13/06/21 11 AM
 
+
+
 var Engine = Matter.Engine,
  World= Matter.World,
  Bodies = Matter.Bodies,
@@ -19,6 +21,8 @@ var Engine = Matter.Engine,
 var canvas,engine,world,camFocus,stats,WalkSound;
 let skeld_img;
 var amaticBold,amaticRegular,jeffrey,mixigiants;
+var joinedSeconds = 0;
+var userName;
 
 //var chest = "asdhg!@#12#$.?";
 
@@ -60,10 +64,10 @@ function setup() {
    //customize sweetalert properties for this one separately using CSS
    let timerInterval;
    
-Swal.fire({
+/*Swal.fire({
   title: 'Welcome to server : '+window.location.hostname,
   html: 'This popup will close in <b></b> seconds',
-  timer: 80000,
+  timer: 5000,
   heightAuto:false,
   timerProgressBar: true,
   didOpen: () => {
@@ -81,8 +85,33 @@ Swal.fire({
   willClose: () => {
     clearInterval(timerInterval)
   }
-})
-   
+})*/
+
+joinedSeconds+=3;
+
+if(joinedSeconds>=3) {
+
+  Swal.fire({
+    title: "Your Name",
+    text: "Write something meaningful :-)",
+    input: 'text',
+    confirmButtonText: 'Save',
+  showLoaderOnConfirm: true,
+    showCancelButton: true        
+}).then((result) => {
+    if (result.value) {
+      userName = result.value;
+      alert(userName);
+    }
+});
+}
+
+console.log(joinedSeconds)
+
+
+
+//rect(width / 2-30, height / 2-30, 50, 50);
+
 
 }
 
@@ -99,6 +128,38 @@ Engine.update(engine);
     image(skeld_img,displayWidth/2,displayHeight/2+20,displayWidth,displayHeight)
 
 }
+
+function doubleClicked() {
+  camera.position.x = mouseX-110;
+  camera.position.y = mouseY;
+  
+  camera.zoom = 4;
+}
+
+function mouseClicked() {
+  camFocus.setDefaultProperties();
+}
+
+function mouseDragged() {
+  camera.zoom = 4;
+  camera.position.x = mouseX-110;
+  camera.position.y = mouseY;
+}
+
+function showNameBox() {
+  drawingContext.shadowOffsetX = 1;
+drawingContext.shadowOffsetY = 1;
+drawingContext.shadowBlur = 10;
+drawingContext.shadowColor = '#0073ff';
+rect()
+}
+
+function showCursorPosForDevsOnly() {
+   textSize(20);
+   fill("#ff0000")
+   text("x : "+mouseX,)
+}
+
 
 
 
