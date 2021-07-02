@@ -1,0 +1,1 @@
+class DummyPlayer extends Crewmate {}

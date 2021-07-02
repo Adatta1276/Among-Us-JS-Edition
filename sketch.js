@@ -63,7 +63,7 @@ function setup() {
 Swal.fire({
   title: 'Welcome to server : '+window.location.hostname,
   html: 'This popup will close in <b></b> seconds',
-  timer: 6000,
+  timer: 80000,
   heightAuto:false,
   timerProgressBar: true,
   didOpen: () => {
