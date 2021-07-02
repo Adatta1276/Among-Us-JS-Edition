@@ -27,4 +27,10 @@
 [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) <br>
 [![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](https://forthebadge.com)
 
+How to download/run a local copy : 
+
+-> Clone/download the repo
+-> Open it in your code/text editor of choice ( I personally use [VSCode](https://code.visualstudio.com/) )
+-> Run it in a live server
+
 
