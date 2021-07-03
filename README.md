@@ -29,8 +29,8 @@
 
 How to download/run a local copy : 
 
--> Clone/download the repo <br>
--> Open it in your code/text editor of choice ( I personally use [VSCode](https://code.visualstudio.com/) ) <br>
--> Run it in a live server
+- Clone/download the repo <br>
+- Open it in your code/text editor of choice ( I personally use [VSCode](https://code.visualstudio.com/) ) <br>
+- Run it in a live server
 
 
