@@ -108,7 +108,7 @@ if(joinedSeconds>=3) {
 
 console.log(joinedSeconds)
 
-
+showNameBox();
 
 //rect(width / 2-30, height / 2-30, 50, 50);
 
@@ -147,11 +147,17 @@ function mouseDragged() {
 }
 
 function showNameBox() {
-  drawingContext.shadowOffsetX = 1;
+ /* drawingContext.shadowOffsetX = 1;
 drawingContext.shadowOffsetY = 1;
 drawingContext.shadowBlur = 10;
-drawingContext.shadowColor = '#0073ff';
-rect()
+drawingContext.shadowColor = '#0073ff';*/
+drawingContext.shadowOffsetX = 5;
+  drawingContext.shadowOffsetY = 5;
+  drawingContext.shadowBlur = 10;
+  drawingContext.shadowColor = 'black';
+rect(width/2,height/2,200,35);
+textSize(30);
+text(userName,width/4,height/4);
 }
 
 function showCursorPosForDevsOnly() {
