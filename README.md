@@ -4,7 +4,7 @@
 
 
 
-
+![GitHub branch checks state](https://img.shields.io/github/checks-status/adatta1276/Among-Us-JS-Edition/master?color=%2300d9ff&label=Code%20%28Master%29&style=for-the-badge) <br>
 
 
 
