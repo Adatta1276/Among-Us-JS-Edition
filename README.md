@@ -8,7 +8,7 @@
 
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/adatta1276/Among-Us-JS-Edition/CodeQL/master?color=orange&label=CODEQL-%20CHECKS&style=for-the-badge) <br>
 
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/adatta1276/Among-Us-JS-Edition/Mark stale issues and pull requests/master?color=orange&label=Issues&PRs&style=for-the-badge) <br> 
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/adatta1276/Among-Us-JS-Edition/Mark%20stale%20issues%20and%20pull%20requests?label=Stale%20Issues%20and%20PRs&style=for-the-badge) 
 
 
 
