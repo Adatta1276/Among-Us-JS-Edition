@@ -6,6 +6,8 @@
 
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/adatta1276/Among-Us-JS-Edition/master?color=%2300d9ff&label=Code%20%28Master%29&style=for-the-badge) <br>
 
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/adatta1276/Among-Us-JS-Edition/CodeQL/master?color=orange&label=CODEQL-%20CHECKS&style=for-the-badge) <br>
+
 
 
 
