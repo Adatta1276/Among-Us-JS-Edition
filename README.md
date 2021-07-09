@@ -2,7 +2,7 @@
 
 ``` This is a work still in development !! ```
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/organization/repository) <br>
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/adatta1276/Among-Us-JS-Edition) <br>
 
 **NOT YET ADDED socket.io**
 
