@@ -2,6 +2,8 @@
 
 ``` This is a work still in development !! ```
 
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/organization/repository) <br>
+
 **NOT YET ADDED socket.io**
 
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/adatta1276/Among-Us-JS-Edition/master?color=%2300d9ff&label=Code%20%28Master%29&style=for-the-badge) <br>
