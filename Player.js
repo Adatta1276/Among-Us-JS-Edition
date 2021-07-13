@@ -75,4 +75,23 @@ class Imposter{
         this.pet = loadImage("");
         this.randomColor = Math.round(random(1,10));
     }
+        
+    animationDoStuff() {
+        this.animation = loadImage("Assets/player_1.png");
+        animation(image(this.animation, this.x, this.y, this.w, this.h, 44, 60, 86, 120), image(this.animation, this.x, this.y, this.w, this.h, 140, 60, 86, 120),image(this.animation, this.x, this.y, this.w, this.h, 236, 60, 86, 120),image(this.animation, this.x, this.y, this.w, this.h, 232, 60, 86, 120))
+    }
+
+
+    canDoTasks(bool) {
+     if(bool === true) {
+
+     }
+
+     else {
+        return false;
+     }
+
+
+    }
 }
+    
